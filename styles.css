@@ -1,13 +1,16 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 50px;
+    margin: 0 200px;
 }
 .nav-title{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #000;
-    font-size: 40px;
+    color: #181818;
+    font-size: 45px;
     font-weight: 800;
 }
 .span-style{
@@ -19,26 +22,28 @@ nav > ul{
      
 }
 nav li{
-    margin: 0 20px;
+    margin-right: 50px;
+}
+nav a {
+    text-decoration: none;
+    color: #474747;
 }
 .btcolor{
-    width: 120px;
-    height: 40px;
     border-radius: 5px;
-    padding: 5px 5px 5px 5px;
-    background-color: orange;
-    border: none;
-    margin-top: 0;
-    margin-bottom: 20px;
+    background: #FD6E0A;
+    border: 0;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 35px;
 }
 .header{
     background-color: #fff8f3;
     background-image: url(image/header_bg.png);
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right, top left;
 }
 .banner{
-    padding: 20px 20px 5px 50px;
+    padding: 30px 30px 0px 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,63 +51,56 @@ nav li{
 .banner-content{
     max-width: 500px;
 }
-.banner .profile{
-    width: 350px;
-    align-items: bottom right;
+.banner .profile-pic{
+    width: 500px;
+}
+.banner-greeting{
+    font-size: 45px;
+    color: #474747;
+    margin-bottom: 0;
 }
 .banner-title{
-    color: #000;
-    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
-.banner-name{
-    color: #000;
-    margin: 0;
-}
-.banner-para{
+
+.banner-description{
     color: #000;
     margin: 0;
     margin-bottom: 5px;
 }
 .about{
-    margin-left: 50px;
-    margin-right: 70px;
-    padding: 50px;
+    padding: 130px;
     border-radius: 10px;
-    background-color: #fff8f3;
-    text-align: center;
-    width: 100%;
+    background: #FFF8F3;
+    margin: 130px 0;
 }
-.section-title{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-}
-.section-description{
-    text-align: center;
-    font-size: 15px;
-    margin: 0;
-}
-main{
-    max-width: 1140px;
-}
-main section{
-    margin-top: 130px;
-}
-.about-content{
+.about-info-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
 }
 .about-info{
     text-align: center;
 }
-#what-i-do{
+.section-title{
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+.section-description{
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+}
+#what-i-do-description{
     padding: 30px 130px;
 }
 .skill-container{
     display: flex;
-    gap: 30px;
+    gap: 24px;
 }
 .what-i-do-section{
     width: 100%;
@@ -120,47 +118,54 @@ main section{
 }
 .skill-description{
     color: #757575;
-    font-size: 15px;
-    margin: 0;
 }
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+main section{
+    margin-top: 130px;
+}
+
 .resume-column-title{
     color: #474747;
     font-size: 30px;
     font-weight: 700;
-    text-align: center;
-}
-.resume-container hr{
-    margin: 30px ;  
-}
-.resume{
-    padding: 50px;
-    background-color: #d3e9f0;
-    border-radius: 10px;
-}
-.resume-column{
-    width: 50%;
 }
 .resume-container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px;
+    gap: 50px;
 }
+.resume-item-title {
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.resume-item-institute {
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.resume-item-institute,
 .resume-item-description{
     color: #757575;
-    font-size: 15px;
-    margin: 0;
+}
+.resume-container hr{
+    margin: 30px;
 }
 .download-cv{
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
-.footer{
-    background-color: #fff8f3;
+footer{
     display: flex;
-    padding: 50px 100px;
-    gap : 50px;
-    width: 100%;
+    gap: 100px;
+    background: #FFF8F3;
+    margin-top: 100px;
+    padding: 130px 200px;
 }
 .footer-column{
     width: 50%;
@@ -168,14 +173,15 @@ main section{
 .social-links a{
     margin-right: 25px;
 }
-.contact input, textarea{
+.contact input[type="text"], .contact input[type="email"],
+textarea{
     display: block;
-    margin-bottom: 20px;
-    padding: 15px 30px;
+    margin-bottom: 25px;
+    padding: 18px 35px;
     color: #757575;
-    border: 0 solid #ccc;
     border-radius: 5px;
-    background-color: #fff;
+    background: #FFF;
+    border: 0;
     width: 100%;
 }
 
