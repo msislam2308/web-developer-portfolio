@@ -54,6 +54,11 @@ nav a {
 .banner .profile-pic{
     width: 500px;
 }
+.banner .banner-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 .banner-greeting{
     font-size: 45px;
     color: #474747;
